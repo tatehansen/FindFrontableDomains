@@ -72,7 +72,7 @@ def main():
                     queue.put(d)          
     elif domain:
         subdomains = []
-        subdomains = sublist3r.main(domain, threads, savefile=None, ports=None, silent=False, verbose=False, enable_bruteforce=False, engines=None)
+        subdomains = sublist3r.main(domain, threads, savefile=None, ports=None, silent=False, verbose=False, enable_bruteforce=True, engines=None)
         for i in subdomains:
             print i
             queue.put(i)
